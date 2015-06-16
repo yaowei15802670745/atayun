@@ -1,5 +1,5 @@
 package com.atayun.hgs.activity;
-
+//git地址https://github.com/yaowei15802670745/atayun.git
 /*@anthor：yaowei
  * 2015-5-15
  * 主要功能描述：根据用户输入的手机号码，加密后的用户密码进行登陆

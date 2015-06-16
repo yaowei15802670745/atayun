@@ -1,5 +1,7 @@
 package com.atayun.hgs.activity;
 
+import com.atayun.hgs.modle.IDApplication;
+
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +15,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class OrderManager extends TabActivity implements OnCheckedChangeListener{
 	private RadioGroup radiogroup;
 	private TabHost tab;
-	
+	private String userId="12";
 	private Button bt_back;
 	private Button bt_add;
 	private RadioButton om_wait_handle;
@@ -25,6 +27,7 @@ public class OrderManager extends TabActivity implements OnCheckedChangeListener
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.order_manager);
+//		userId=((IDApplication) getApplication()).getUserId();
 		initView();
 	}
 

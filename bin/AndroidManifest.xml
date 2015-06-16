@@ -96,7 +96,7 @@
             android:value="Y1eaY8vlzxI4qeOPwbT2rCOY" />
 
         <activity
-            android:name="com.atayun.hgs.activity.CarPersonCenter"
+            android:name="com.atayun.hgs.activity.LoginActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -146,8 +146,8 @@
         </activity>
         <activity android:name="com.atayun.hgs.activity.TermsOfUse" >
         </activity>
- <!--       <activity android:name="com.atayun.hgs.activity.CarPersonCenter" >
-        </activity> --> 
+     <activity android:name="com.atayun.hgs.activity.CarPersonCenter" >
+        </activity> 
        <activity android:name="com.atayun.hgs.activity.GoodsPersonCenter" >
         </activity> 
         <activity android:name="com.atayun.hgs.activity.PageFoot" >
@@ -182,18 +182,18 @@
         </activity>
         <activity android:name="com.atayun.hgs.activity.UpLoadPictureActivity" >
         </activity>
-      <!--  <activity
+      <activity
             android:name="com.atayun.hgs.activity.PoiSearchDemo"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_poi"
             android:screenOrientation="portrait" >
-        </activity> -->
+        </activity> 
 
         
                <activity
             android:name="com.atayun.hgs.activity.WaitHandle"/>
-               <activity
-            android:name="com.atayun.hgs.activity.OrderManager"/>
+              <activity
+            android:name="com.atayun.hgs.activity.OrderManager"/> 
     </application>
 
 </manifest>
