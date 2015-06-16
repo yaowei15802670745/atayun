@@ -42,6 +42,7 @@ public class WaitHandle extends Activity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.wait_handle);
+//		userId=((IDApplication) getApplication()).getUserId();
 		initView();
 		Task task=new Task();
 		task.execute();
