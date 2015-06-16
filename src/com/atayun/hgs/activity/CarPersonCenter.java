@@ -112,9 +112,9 @@ public class CarPersonCenter extends Activity implements OnClickListener{
 				screenwidth = dm.widthPixels;
 				screenheight = dm.heightPixels;
 
-//		flagID=((IDApplication)getApplication()).getFlagID();  
-//		Log.d("carflagID", flagID);
-//		userId=((IDApplication)getApplication()).getUserId();
+		flagID=((IDApplication)getApplication()).getFlagID();  
+		Log.d("carflagID", flagID);
+		userId=((IDApplication)getApplication()).getUserId();
 		initView();
 		PersonName.setText(name);//设置名字
 //		Person_identification.setText(identify);//设置，就会显示已认证
