@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sourcetype">
+        <item>设备</item>
+        <item>矿产</item>
+        <item>建材</item>
+        <item>食品</item>
+        <item>蔬菜</item>
+        <item>生鲜</item>
+        <item>药品</item>
+        <item>化工</item>
+        <item>木材</item>
+        <item>家畜</item>
+        <item>纺织品</item>
+        <item>日用品</item>
+        <item>电子电器</item>
+        <item>农副产品</item>
+        <item>其他类型</item>
+        
+    </string-array>
+</resources>

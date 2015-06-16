@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.atayun.hgs.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 电话拨号网络权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission> <!-- 获取外部存储设备是有关安全的，所以需要添加相关的权限 -->
+    <!-- 百度地图权限 -->
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"></uses-permission> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 拍照和获取相册权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" >
+    </uses-permission>
+    <!-- 图片上传的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.atayun.hgs.modle.IDApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Y1eaY8vlzxI4qeOPwbT2rCOY" />
+
+        <activity
+            android:name="com.atayun.hgs.activity.CarPersonCenter"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.RegisterActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.SetPassWordActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.TabheadActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.Info_carActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.Info_userActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.ResetPhoneActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.ResetPasswordActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.GoodsSquareActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.GoodsDetailActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.CarSquareActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.CarDetailActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.PublishGoodsActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.MatchGoodsSqureActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.OtherGoodsDetailActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.BestMachDetailgoodsActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.BestSquareGoodsActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.PublishGoodsActivity_Is" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.PublishGoodsActivity_No" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.HomePage" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.AdService" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.TermsOfUse" >
+        </activity>
+ <!--       <activity android:name="com.atayun.hgs.activity.CarPersonCenter" >
+        </activity> --> 
+       <activity android:name="com.atayun.hgs.activity.GoodsPersonCenter" >
+        </activity> 
+        <activity android:name="com.atayun.hgs.activity.PageFoot" >
+        </activity>
+       
+        <activity android:name="com.atayun.hgs.activity.GoodsPersonlInfo" >
+        </activity>
+        
+        <activity android:name="com.atayun.hgs.activity.CarownerInfo" >
+        </activity> 
+        <activity android:name="com.atayun.hgs.activity.PublishCarActivity_Is" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.PublishCarActivity_No" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.ComInfo" >
+        </activity> 
+        <activity android:name="com.atayun.hgs.activity.PubGoodsFail" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.PubGoodsSuccess" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.GoodsManagerActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.MyResources" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.MessageCenterActivity" >
+        </activity>
+     
+                          <activity android:name="com.atayun.hgs.activity.CarPersonlInfo" >
+        </activity>
+        
+        <activity android:name="com.atayun.hgs.activity.UploadPictureActivity" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.UpLoadPictureActivity" >
+        </activity>
+      <!--  <activity
+            android:name="com.atayun.hgs.activity.PoiSearchDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/demo_name_poi"
+            android:screenOrientation="portrait" >
+        </activity> -->
+
+        
+               <activity
+            android:name="com.atayun.hgs.activity.WaitHandle"/>
+               <activity
+            android:name="com.atayun.hgs.activity.OrderManager"/>
+    </application>
+
+</manifest>

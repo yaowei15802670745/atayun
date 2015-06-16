@@ -1,0 +1,566 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/mr_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/mr_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/mr_tittle"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/mr_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:background="#ffffffff"
+            android:text="@string/mr_edit" />
+
+        <Button
+            android:id="@+id/mr_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:background="#ffffffff"
+            android:text="@string/mr_delete" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mr_com_qualifi"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/mr_com_qualifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_horizontal"
+                    android:textSize="17sp" />
+                <Button
+                    android:id="@+id/mr_com_ac"
+                    android:layout_marginLeft="120dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:gravity="right|center_vertical"
+                    android:background="#00000000"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- 发货线路 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_sent_route"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_sent_start"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:gravity="center"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="@string/mr_dash"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_sent_end"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:background="@drawable/corner"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 货物规格 -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_goods_specification"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/mr_t"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/mr_t"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/mr_l"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/mr_l"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/mr_w"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/mr_w"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/mr_h"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/mr_h"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/mr_fang"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:gravity="center"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/mr_fang"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <!-- 运费： -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_fee"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/mr_fee"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/corner"
+                        android:textSize="17sp" />
+                </LinearLayout>
+                <!-- 是否议价 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_isdiscuss"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/mr_is_discuss"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:entries="@array/is_discuss_price" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 货运类型 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_convey_type"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/mr_convey_type"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:entries="@array/transporttype" />
+                </LinearLayout>
+                <!-- 货源类型 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_goods_type"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/mr_goods_type"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:entries="@array/sourcetype" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <!-- 需要车型 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_need_cartype"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/mr_need_cartype"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:entries="@array/cartype" />
+                </LinearLayout>
+                <!-- 需要车长 -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="@string/mr_need_catlength"
+                        android:textSize="17sp" />
+
+                    <Spinner
+                        android:id="@+id/mr_need_carlength"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner"
+                        android:entries="@array/carlength" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 发货时间 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_send_time"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_send_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:focusable="false"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+            <!-- 联系人姓名 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_contact_name"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_contact_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <!-- 联系人电话 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_contact_number"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_contact_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <!-- 信息内容 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_content"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <!-- 出发详细地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_start_detail"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_start_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+            <!-- 到达详细地址 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/mr_end_detail"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/mr_end_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:paddingLeft="5dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/mr_save"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="#a5a5a5"
+                android:textColor="#ffffff"
+                android:text="@string/mr_save" />
+            <LinearLayout  
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                
+            </LinearLayout>
+        </LinearLayout>
+        
+    </ScrollView>
+
+</LinearLayout>

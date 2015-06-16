@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="cartype">
+      
+        <item>厢式车</item>
+        <item>平板车</item>
+        <item>高低板车</item>
+        <item>高栏车</item>
+        <item>中栏车</item>
+        <item>低栏车</item>
+        <item>罐式车</item>
+        <item>冷藏车</item>
+        <item>保温车</item>
+        <item>危险品车</item>
+        <item>铁笼车</item>
+        <item>集装箱车</item>
+        <item>自动卸货车</item>
+        <item>其他车型</item>
+    </string-array>
+
+</resources>

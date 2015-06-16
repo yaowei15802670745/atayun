@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3ff" >
+    </RelativeLayout>
+    
+   <ImageView
+       android:id="@+id/imgShow"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/btnSend"
+       android:layout_below="@+id/rlTitle"
+       android:layout_margin="15dip"
+       android:background="@drawable/button_down"
+       android:scaleType="fitXY"
+       android:src="@drawable/button_down" />
+
+   <Button
+       android:id="@+id/btnClose"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/imgShow"
+       android:layout_centerVertical="true"
+   
+       android:paddingBottom="2dp"
+       android:text="添加"
+      android:textColor="#127ee3"
+       android:textSize="12sp" />
+
+   <Button
+       android:id="@+id/btnSend"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/btnClose"
+       android:layout_alignBottom="@+id/btnClose"
+       android:layout_alignRight="@+id/imgShow"
+      
+       android:paddingBottom="2dp"
+       android:text="上传"
+       android:textColor="#127ee3"
+       android:textSize="12sp" />
+
+   <TextView
+       android:id="@+id/textView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/btnClose"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="66dp"
+       android:text="" />
+
+</RelativeLayout>

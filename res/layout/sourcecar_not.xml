@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="@string/car_publish"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			
+            
+            <Button
+                android:id="@+id/car_detail"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ff6100"
+                android:drawablePadding="70dp"
+                android:drawableRight="@drawable/more"
+                android:orientation="horizontal"
+                android:paddingLeft="80dp"
+                android:textSize="17sp"
+                android:paddingRight="10dp"
+                android:text="@string/car_detail"
+                android:textColor="@color/my_white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/start_Palce"
+                    android:textColor="@color/my_dark_gray"
+                    android:textSize="15sp" />
+ <EditText
+                 android:id="@+id/cariStart"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                 android:ems="10"
+                 android:hint="请输入起点"
+                 android:inputType="text"
+                 android:paddingLeft="10dp"
+                 android:paddingRight="10dp" />
+            <!--     <Spinner
+                    android:id="@+id/start_city"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:entries="@array/city" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/end_Palce"
+                    android:textColor="@color/my_dark_gray"
+                    android:textSize="15sp" />
+  <EditText
+                android:id="@+id/cariEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="请输入终点"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+               <!--  <Spinner
+                    android:id="@+id/end_city"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:entries="@array/city" /> -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/four_standard"
+                    android:textColor="@color/my_dark_gray"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/multi_choice"
+                    android:textColor="@color/my_dark_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal" >
+
+               <CheckBox
+                    android:id="@+id/over_lengh"
+                    style="@style/car_radiobutton"
+                    android:text="@string/over_length" />
+
+                <CheckBox
+                    android:id="@+id/over_width"
+                    style="@style/car_radiobutton"
+                    android:text="@string/over_width" />
+
+                <CheckBox
+                    android:id="@+id/over_height"
+                    style="@style/car_radiobutton"
+                    android:text="@string/over_height" />
+
+                <CheckBox
+                    android:id="@+id/over_weight"
+                    style="@style/car_radiobutton"
+                    android:text="@string/over_weight" />
+            </LinearLayout>
+
+            <Button
+                 android:id="@+id/ng_publish"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/publicbutton"
+                android:text="@string/g_publish"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

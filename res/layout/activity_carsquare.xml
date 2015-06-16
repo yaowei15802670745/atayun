@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CarSquareActivity" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="34dp"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+    
+    <ImageView 
+        android:id="@+id/ic_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_back"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:text="@string/back" />
+
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+  		android:layout_weight="1"
+  		android:gravity="center"
+        android:text="车源广场"
+        android:textSize="15sp"/>
+    <ImageView 
+        android:id="@+id/location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_location"/>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#bababa"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    >
+    <!-- 下拉列表 -->
+    <!-- <Spinner
+        android:id="@+id/start" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+    <Spinner
+        android:id="@+id/end" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        /> -->
+    <EditText
+        android:id="@+id/start" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" 
+        android:background="@drawable/searchcorner"
+        android:hint="请输入出发地"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--"/>
+    <EditText 
+        android:id="@+id/end" 
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/searchcorner"
+        android:hint="请输入目的地"/>
+    <Button 
+        android:id="@+id/search" 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:text="搜索"
+        android:background="@drawable/searchcorner"/>
+</LinearLayout>
+<ListView
+    android:id="@+id/lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:dividerHeight="7dp" >
+</ListView>
+
+</LinearLayout>

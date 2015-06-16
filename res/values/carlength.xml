@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+       <string-array name="carlength">
+        <item >车辆长/米</item>
+        <item >4.5</item>
+        <item >6.2</item>
+        <item >6.8</item>
+        <item >7.2</item>
+        <item >8.2</item>
+        <item >8.6</item>
+        <item >9.6</item>
+        <item >11.7</item>
+        <item >12.5</item>
+        <item >13</item>
+    </string-array>
+</resources>

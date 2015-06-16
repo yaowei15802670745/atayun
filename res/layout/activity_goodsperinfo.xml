@@ -1,0 +1,172 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GoodsPersonlInfo" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/per_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/per_info"
+            android:textSize="15sp" />
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <EditText
+                android:id="@+id/per_etName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corner"
+                android:hint="@string/per_etName"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/per_etPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner"
+                android:hint="@string/per_etPhone"
+                android:inputType="phone"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/per_UploadPapers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/per_UploadPapers"
+                android:textColor="#999999" />
+
+            <EditText
+                android:id="@+id/per_etID"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner"
+                android:hint="@string/per_etID"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/per_UploadPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/id_zheng" />
+
+              <!--   <Button
+                    android:id="@+id/per_UploadPositive"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:text="@string/per_UploadPositive" /> -->
+
+                <ImageButton
+                    android:id="@+id/per_UploadNegative"
+                   android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/id_fan" />
+
+               <!--  <Button
+                    android:id="@+id/per_UploadNegative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:text="@string/per_UploadNegative" /> -->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/per_edPerDddre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/per_edPerDddre"
+                android:textColor="#999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/per_Rovince"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/province"
+                    android:padding="5dp" />
+
+                <Spinner
+                    android:id="@+id/per_City"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/city"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/per_etDetaileAddre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner"
+                android:hint="@string/per_etDetaileAddre"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/SUbmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/corner"
+                android:padding="5dp"
+                android:text="@string/complete" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

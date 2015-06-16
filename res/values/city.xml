@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item >石家庄市</item>
+         <item >唐山市</item>
+          <item >秦皇岛市</item>
+           <item >邯郸市</item>
+            <item >邢台市</item>
+             <item >保定市</item>
+              <item >张家口市</item>
+               <item >承德市</item>
+                <item >沧州市</item>
+                   <item >廊坊市</item>
+                      <item >衡水市</item>
+                
+    </string-array>
+</resources>

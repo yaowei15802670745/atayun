@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#444444"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp"
+        android:text="@string/toast_carturngoods"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="178dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/no_toturn"
+            style="@style/dialog_button"
+            android:background="@drawable/dialog_button"
+            android:text="@string/no_toturn"
+            android:textColor="#127ee3" />
+
+        <Button
+            android:id="@+id/yes_toturn"
+            style="@style/dialog_button"
+            android:background="@drawable/dialog_button"
+            android:text="@string/yes_toturn"
+            android:textColor="#127ee3" />
+    </LinearLayout>
+
+</LinearLayout>

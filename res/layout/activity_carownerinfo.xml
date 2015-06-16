@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <!-- <Button
+            android:id="@+id/ow_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:text="@string/back" /> -->
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="@string/ow_info"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/ow_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#00ffffff"
+            android:text="跳过" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/ow_cariLpnum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/ow_cariLpnum"
+                    android:inputType="text"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/ow_companyname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/ow_companyname"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ow_tecarinfo" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ow_carType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:entries="@array/cartype"
+                    android:paddingLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ow_cariLength"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/carlength" />
+
+                <Spinner
+                    android:id="@+id/ow_cariWidth"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/carwidth" />
+
+                <Spinner
+                    android:id="@+id/ow_cariHeight"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/carheight" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ow_cariLoad"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/carload" />
+
+                <Spinner
+                    android:id="@+id/ow_cariVolume"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner"
+                    android:entries="@array/carvolume" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/ow_etcarpic" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <EditText
+                    android:id="@+id/ow_etcarpic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/ow_etcarpic"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="50dp" />
+
+                <ImageButton
+                    android:id="@+id/uploadcarpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <EditText
+                    android:id="@+id/ow_etdrivepic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/ow_etdrivepic"
+                    android:paddingLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/uploaddrivepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp" >
+
+                <EditText
+                    android:id="@+id/ow_etcardrivepic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@drawable/corner"
+                    android:hint="@string/ow_etcardrivepic"
+                    android:paddingLeft="10dp" />
+
+                <ImageButton
+                    android:id="@+id/uploadcardrivepic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/ow_carcomplete"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/completebutton"
+                android:text="@string/complete" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

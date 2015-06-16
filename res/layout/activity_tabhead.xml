@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/forth_button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#00000000"
+                android:drawableLeft="@drawable/left"
+                android:onClick="Back"
+                android:paddingLeft="5dp"
+                android:text="返回"
+                android:textColor="#b2b2b2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/caidan"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <!-- checked,打开的时候就选中 -->
+
+                <RadioButton
+                    android:id="@+id/tab_button1"
+                    style="@style/home_tab_bottom"
+                    android:background="@drawable/tab_button1"
+                    android:checked="true"
+                    android:text="个人信息"
+                    android:textColor="@drawable/colorselect" />
+
+                <RadioButton
+                    android:id="@+id/tab_button2"
+                    style="@style/home_tab_bottom"
+                    android:background="@drawable/tab_button2_un"
+                    android:text="车辆信息"
+                    android:textColor="@drawable/colorselect" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,64 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" >
+        </FrameLayout>
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <RadioGroup
+            android:id="@+id/caidan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#127ee3"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <!-- checked,打开的时候就选中 -->
+
+            <RadioButton
+                android:id="@+id/button1"
+                style="@style/home_tab_bottom2"
+                android:layout_marginTop="1px"
+                android:text="订单管理"
+                android:textColor="@drawable/colorselect2" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/button2"
+                style="@style/home_tab_bottom2"
+                android:layout_marginTop="1px"
+                android:checked="true"
+                android:text="首页"
+                android:textColor="@drawable/colorselect2" >
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/button3"
+                style="@style/home_tab_bottom2"
+                android:layout_marginTop="1px"
+                android:text="货源发布"
+                android:textColor="@drawable/colorselect2" />
+        </RadioGroup>
+    </LinearLayout>
+</TabHost>

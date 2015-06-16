@@ -1,0 +1,178 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/com_Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:text="跳过" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/com_CompanyName"
+                style="@style/com_info"
+                android:hint="@string/com_CompanyName" />
+
+            <EditText
+                android:id="@+id/com_etNationTaxnum"
+                style="@style/com_info"
+                android:hint="@string/com_etNationTaxnum" />
+
+            <EditText
+                android:id="@+id/com_etPhone"
+                style="@style/com_info"
+                android:hint="@string/com_etPhone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/com_UploadPapers"
+                android:textColor="#525252"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <EditText
+                    android:id="@+id/com_etBusLican"
+                    style="@style/com_info"
+                    android:hint="@string/com_etBusLican" />
+
+                <ImageButton
+                    android:id="@+id/ph_etBusLican"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <EditText
+                    android:id="@+id/com_etRegistTx"
+                    style="@style/com_info"
+                    android:hint="@string/com_etRegistTx" />
+
+                <ImageButton
+                    android:id="@+id/ph_etRegistTx"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <EditText
+                    android:id="@+id/com_etOpenPemit"
+                    style="@style/com_info"
+                    android:hint="@string/com_etOpenPemit" />
+
+                <ImageButton
+                    android:id="@+id/ph_etOpenPemit"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <EditText
+                    android:id="@+id/com_etTemModel"
+                    style="@style/com_info"
+                    android:hint="@string/com_etTemModel" />
+
+                <ImageButton
+                    android:id="@+id/ph_etTemModel"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/photo" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/com_RegistAddress"
+                android:textColor="#525252"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <Spinner
+                    android:id="@+id/ow_cariLoad"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_text"
+                    android:entries="@array/province" />
+
+                <Spinner
+                    android:id="@+id/ow_cariVolume"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/corner_text"
+                    android:entries="@array/city" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/com_etDetailedAddre"
+                style="@style/com_info"
+                android:hint="@string/com_etDetailedAddre" />
+
+            <Button
+                android:id="@+id/com_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#127ee3"
+                android:background="@drawable/completebutton"
+                android:text="@string/com_Submit" 
+             />
+          
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical" >
+
+   <RelativeLayout
+        android:id="@+id/rlTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3ff" >
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_down"
+            android:paddingBottom="2dp"
+            android:text="Add"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/picture_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           android:text="picture_title"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_down"
+            android:paddingBottom="2dp"
+            android:text="show"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+    </RelativeLayout>
+    
+   <ImageView 
+       android:id="@+id/imgShow"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_margin="15dip"
+       android:background="@drawable/button_down"
+       android:src="@drawable/button_down"
+         android:layout_below="@+id/rlTitle"
+       android:scaleType="fitXY"
+       />
+    
+   <TextView 
+       android:id="@+id/img_path"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/imgShow"
+       android:layout_margin="15dip"
+       android:hint="图片路径"
+      />
+
+</RelativeLayout>

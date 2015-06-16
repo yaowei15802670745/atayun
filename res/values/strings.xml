@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云端物流</string>
+    <string name="hello_world">Hello world!</string>
+ 
+    <string name="action_settings">Settings</string>
+
+	<string name="register">用户注册</string>
+	<string name="forget">忘记密码？</string>
+	<string  name="login">登录</string>
+	
+	
+	  <string name="logo">云端物流</string>
+    <string name="please_phone">请输入手机号</string>
+    <string name="next">下一步</string>
+    <string name="demo_name_poi">POI搜索功能</string>
+    
+    
+	<string name="get_code">获取验证码</string>
+	<string name="please_code">请输入验证码</string>
+	<string name="please_password">请输入密码</string>
+	<string name="remind_text">验证码已通过短信发到您的手机</string>
+	<string name="password_confirm">完成</string>
+	<string name="toast_text">完善个人信息方可使用软件全部业务，是否继续完善？</string>
+	<string name="toast_look">先看看</string>
+	<string name="toast_confirm">立即完善</string>
+	
+	<string name="choose_pic">     选择图片           </string>
+	<string name="take_pic">拍照</string>
+	<string name="take_pho">相册</string>
+	<!-- 货主车主个人中心更换身份弹幕 -->
+	<string name="toast_carturngoods">您现在的身份是车主，是否更换为货主身份？</string>
+	<string name="toast_goodsturncar">您现在的身份是货主，是否更换为车主身份？</string>
+	<string name="yes_toturn">确定</string>
+	<string name="no_toturn">取消</string>
+
+		
+	<!-- 用户编辑资料页面的string -->
+	<string name="user_name">姓名/企业名</string>
+	<string name="user_adress">联系地址</string>
+	<string name="user_phone">联系电话</string>
+	<string name="user_idcard">相关证件</string>
+	<string name="drive_route">主要行车路线</string>
+	<string name="drive_area">主要寄货区域</string>
+	<string name="finish">完成</string>
+   <string name="person_detail"></string>
+	
+	
+	<!-- 编辑车辆资料页面的string -->
+	<string name="car_code">车牌号</string>
+	<string name="car_type">车型</string>
+	<string name="car_weight">车辆吨数</string>
+	<string name="car_wh">车辆长宽高</string>
+	<string name="car_photo">上传车辆图片</string>
+	<string name="car_finish">完成</string>
+	<string name="checkgoods">查看货源</string>
+		<string name="checkcars">查看车源</string>
+		<string name="publish">发布货源</string>
+		
+		
+		  <!-- 资源广场第一页 -->
+    <string name="back">返回</string>
+    <string name="resourse_market">货源广场</string>
+    <string name="choose_city">选择城市</string>
+    <string name="search">搜索</string>
+    <string name="form_search">模板搜索</string>
+    <!-- listview中的 -->
+    <string name="starttime">装车时间：</string>
+    <string name="endtime">到达时间:</string>
+    <!-- 资源广场第二页 -->
+    <string name="create_order">生成订单</string>
+    <string name="company_confirm">资质确认</string>
+    <string name="check_route">查看线路</string>
+    <string name="dial_num">拨打</string>
+    <string name="goods_pic">货源图片：</string>
+    <string name="pay_way">运费支付方式：</string>
+    <string name="online_pay">在线支付：</string>
+    <string name="cash_pay">现金支付：</string>
+    <!-- 车源广场 -->
+    	
+	<string name="carowner">车主名</string>
+	<string name="carId">车牌号</string>
+	<string name="carType">其他车型</string>
+	<string name="carHeight">4.2米</string>
+	<string name="telephone">电话联系</string>
+	<string name="tuisong">推送货源</string>
+	<string name="order">订单生成</string>
+	
+	
+	
+    <string name="goods_publish">货源发布</string>
+    <string name="car_publish">货车发布</string>
+  
+    <!-- homepage首页显示的内容 -->
+    <string name="search_goods">货物查询</string>
+    <string name="search_car">车辆查询</string>
+    <!--person_center个人中心的-->
+    <string name="order_manage">订单管理</string>
+      <string name="goods_manage">货物管理</string>
+    <string name="My_client">我的客户</string>
+    <string name="info_toast">消息提醒</string>
+    
+    
+    <!--货源发布的内容-->
+    <string name="add_company_aptitude">添加公司资质</string>
+	<string name="startcity">出发城市：</string>
+	<string name="type_startCity">输入出发城市</string>
+	<string name="endtcity">到达城市：</string>
+	<string name="type_endCity">输入到达城市</string>
+	<string name="start_addressdetail">出发详细地址：</string>
+	<string name="type_startAddress">输入出发详细城市</string>
+	<string name="end_addressdetail">到达详细地址：</string>
+	<string name="type_endAddress">输入到达详细地址</string>
+	<string name="huoyuanType">货源类型：</string>
+	<string name="huoyunType">货运类型：</string>
+	<string name="goodsSpecification">货物规格：</string>
+	<string name="length">长：</string>
+	<string name="width">宽：</string>
+	<string name="height">高：</string>
+	<string name="mi">米</string>
+	<string name="numbers">数量：</string>
+	<string name="price">价格：</string>
+	<string name="yuan">元</string>
+	<string name="needCarType">需要车型：</string>
+	<string name="needCarLength">需要车长：</string>
+	<string name="contactsName">联系人姓名：</string>
+	<string name="contactsPhone">联系人电话：</string>
+	<string name="infodetail">信息内容：</string>
+	<string name="sent_time">发货时间：</string>
+	<string name="toast_goods">您的个人信息尚未完善，是否先完善个人信息？</string>
+	<string name="goods_comfic">先去完善：</string>
+	<string name="goods_publish_nocomfic">继续发货：</string>
+
+	<string name="pubgoods_is">发布成功</string>
+	<string name="check_home">首页</string>
+	<string name="pubgoods_conti">继续</string>
+	<string name="pubgoods_no">发布失败</string>	
+	<string name="pubgoods_retry">重试</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="per_info">货主个人信息</string>
+	<string name="car_info">车主个人信息</string>
+
+	<string name="complete">完成</string>
+	<string name="per_etName">姓名</string>
+	<string name="per_etPhone">电话</string>
+	<string name="per_UploadPapers">证件上传</string>
+	<string name="per_etID">身份证号</string>
+	<string name="per_UploadPositive">上传正面</string>
+	<string name="per_UploadNegative">上传反面</string>
+	<string name="per_edPerDddre">常住址</string>
+	<string name="per_etDetaileAddre">详细地址</string>
+	<string name="ow_info">车主信息</string>
+	<string name="ow_cariLpnum">车牌号（例如 京A12345）</string>
+	<string name="ow_cariType">车型</string>
+	<string name="ow_companyname">企业名称</string>
+	<string name="ow_tecarinfo">车辆信息</string>
+	<string name="ow_etcarpic">车辆图片</string>
+	<string name="ow_etdrivepic">驾驶证图片</string>
+		<string name="ow_etcardrivepic">行驶证图片</string>
+	
+	
+	<!-- 车源发布 -->
+<string name="car_detail">您的信息还不完整去个人中心</string>
+<string name="car_id">车牌号</string>
+<string name="car_lwh">车辆长宽高</string>
+<string name="car_bear">承载重量</string>
+
+	<string name="start_Palce">出发城市</string>
+	<string name="end_Palce">到达城市</string>
+	<string name="four_standard">四超标准</string>
+	<string name="multi_choice">(可多选)</string>
+	<string name="over_length">超长</string>
+	<string name="over_width">超宽</string>
+	<string name="over_height">超高</string>
+	<string name="over_weight">超重</string>
+	<string name="g_publish">发布</string>
+		
+	
+
+	    <!-- 企业信息 -->
+	<string name="com_CompanyName">企业名称</string>
+	<string name="com_etNationTaxnum">国税号</string>
+	<string name="com_etPhone">企业电话</string>
+	<string name="com_UploadPapers">证件上传</string>
+	<string name="com_etBusLican">营业执照</string>
+	<string name="com_etRegistTx">税务登记证副本</string>
+	<string name="com_etOpenPemit">开户许可证</string>
+	<string name="com_etTemModel">需求税票模板</string>
+	<string name="com_RegistAddress">公司注册地址</string>
+	
+	<string name="com_etDetailedAddre">详细地址</string>
+	<string name="com_Submit">完成</string>
+	<!-- 我的货源管理 -->
+	  <string name="mr_edit">编辑</string>
+    <string name="mr_back">返回</string>
+    <string name="mr_tittle">我的货源</string>
+    <string name="mr_delete">删除</string>
+    <string name="mr_com_qualifi">公司资职：</string>
+    <string name="mr_sent_route">发货线路：</string>
+    <string name="mr_dash">——</string>
+    <string name="mr_goods_specification">货物规格：</string>
+    <string name="mr_t">T</string>
+    <string name="mr_l">L</string>
+    <string name="mr_w">W</string>
+    <string name="mr_h">H</string>
+    <string name="mr_fang">方</string>
+    <string name="mr_fee">运费:</string>
+    <string name="mr_isdiscuss">是否议价:</string>
+    <string name="mr_convey_type">货运类型:</string>
+    <string name="mr_goods_type">货源类型:</string>
+    <string name="mr_need_cartype">需要车型:</string>
+    <string name="mr_need_catlength">需要车长:</string>
+    <string name="mr_send_time">发货时间:</string>
+    <string name="mr_contact_name">联系人姓名:</string>
+    <string name="mr_contact_number">联系人电话:</string>
+    <string name="mr_content">信息内容:</string>
+    <string name="mr_start_detail">出发详细地址:</string>
+    <string name="mr_end_detail">到达详细地址:</string>
+    <string name="mr_save">保存</string>
+<string name="mr_com_ac">已认证</string>
+	
+	 <!-- 是否接受 议价 -->
+    <string-array name="is_discuss_price">
+        <item>是</item>
+        <item>否</item>
+         </string-array>
+         
+
+ <!-- 订单管理-->
+    <string name="om_back">返回</string>
+    <string name="om_logo">订单管理</string>
+    <string name="om_add">添加</string>
+    <string name="om_wait_handle">待处理</string>
+    <string name="om_unfinished">未完成</string>
+    <string name="om_has_finished">已完成</string>
+    <string name="om_cancel">已取消</string>
+</resources>
