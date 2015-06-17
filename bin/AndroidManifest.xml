@@ -95,8 +95,9 @@
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="Y1eaY8vlzxI4qeOPwbT2rCOY" />
 
+            <!-- android:name="com.atayun.hgs.activity.LoginActivity" -->
         <activity
-            android:name="com.atayun.hgs.activity.LoginActivity"
+            android:name="com.atayun.hgs.activity.OrderManager"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -146,24 +147,22 @@
         </activity>
         <activity android:name="com.atayun.hgs.activity.TermsOfUse" >
         </activity>
-     <activity android:name="com.atayun.hgs.activity.CarPersonCenter" >
-        </activity> 
-       <activity android:name="com.atayun.hgs.activity.GoodsPersonCenter" >
-        </activity> 
+        <activity android:name="com.atayun.hgs.activity.CarPersonCenter" >
+        </activity>
+        <activity android:name="com.atayun.hgs.activity.GoodsPersonCenter" >
+        </activity>
         <activity android:name="com.atayun.hgs.activity.PageFoot" >
         </activity>
-       
         <activity android:name="com.atayun.hgs.activity.GoodsPersonlInfo" >
         </activity>
-        
         <activity android:name="com.atayun.hgs.activity.CarownerInfo" >
-        </activity> 
+        </activity>
         <activity android:name="com.atayun.hgs.activity.PublishCarActivity_Is" >
         </activity>
         <activity android:name="com.atayun.hgs.activity.PublishCarActivity_No" >
         </activity>
         <activity android:name="com.atayun.hgs.activity.ComInfo" >
-        </activity> 
+        </activity>
         <activity android:name="com.atayun.hgs.activity.PubGoodsFail" >
         </activity>
         <activity android:name="com.atayun.hgs.activity.PubGoodsSuccess" >
@@ -174,26 +173,24 @@
         </activity>
         <activity android:name="com.atayun.hgs.activity.MessageCenterActivity" >
         </activity>
-     
-                          <activity android:name="com.atayun.hgs.activity.CarPersonlInfo" >
+        <activity android:name="com.atayun.hgs.activity.CarPersonlInfo" >
         </activity>
-        
         <activity android:name="com.atayun.hgs.activity.UploadPictureActivity" >
         </activity>
         <activity android:name="com.atayun.hgs.activity.UpLoadPictureActivity" >
         </activity>
-      <activity
+        <activity
             android:name="com.atayun.hgs.activity.PoiSearchDemo"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/demo_name_poi"
             android:screenOrientation="portrait" >
-        </activity> 
-
-        
-               <activity
-            android:name="com.atayun.hgs.activity.WaitHandle"/>
-              <activity
-            android:name="com.atayun.hgs.activity.OrderManager"/> 
+        </activity>
+      <!-- <activity android:name="com.atayun.hgs.activity.OrderManager" />  --> 
+        <activity android:name="com.atayun.hgs.activity.Om_WaitHandle" />
+        <activity android:name="com.atayun.hgs.activity.OrderWaitActivity" />
+        <activity android:name="com.atayun.hgs.activity.Om_HasFinishedActivity" />
+        <activity android:name="com.atayun.hgs.activity.Om_UnFinishedActivity" />
+        <activity android:name="com.atayun.hgs.activity.Om_CancelActivity" />
     </application>
 
 </manifest>

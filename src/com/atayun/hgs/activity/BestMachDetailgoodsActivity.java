@@ -119,7 +119,7 @@ public class BestMachDetailgoodsActivity extends Activity implements OnClickList
 	//textview的颜色一部分灰色，一半黑色，所以使用这个方法。
 	private void setPartColor(String text,TextView textview,int start,int end){
 		SpannableString sp=new SpannableString(text);
-		sp.setSpan(new ForegroundColorSpan(color.abc_search_url_text_holo), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+		sp.setSpan(new ForegroundColorSpan(color.my_dark_gray), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 		textview.setText(sp);
 	}
 	@Override

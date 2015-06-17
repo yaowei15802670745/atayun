@@ -1,7 +1,5 @@
 package com.atayun.hgs.activity;
 
-import com.atayun.hgs.modle.IDApplication;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +13,7 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 public class OrderManager extends TabActivity implements OnCheckedChangeListener{
 	private RadioGroup radiogroup;
 	private TabHost tab;
-	private String userId="12";
+	private String userId="23";
 	private Button bt_back;
 	private Button bt_add;
 	private RadioButton om_wait_handle;
@@ -27,7 +25,6 @@ public class OrderManager extends TabActivity implements OnCheckedChangeListener
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.order_manager);
-//		userId=((IDApplication) getApplication()).getUserId();
 		initView();
 	}
 
@@ -44,23 +41,23 @@ public class OrderManager extends TabActivity implements OnCheckedChangeListener
 		tab.setFocusable(true);
 		
 		TabHost.TabSpec tabspec=tab.newTabSpec("1");
-		Intent intent=new Intent(OrderManager.this,WaitHandle.class);
+		Intent intent=new Intent(OrderManager.this,Om_WaitHandle.class);
 		tabspec.setIndicator("待处理").setContent(intent);
 		tab.setup(this.getLocalActivityManager());
 		tab.addTab(tabspec);
 		
 		TabHost.TabSpec tabspec2=tab.newTabSpec("2");
-		Intent intent2=new Intent(OrderManager.this,WaitHandle.class);
+		Intent intent2=new Intent(OrderManager.this,Om_UnFinishedActivity.class);
 		tabspec2.setIndicator("未完成").setContent(intent2);
 		tab.addTab(tabspec2);
 		
 		TabHost.TabSpec tabspec3=tab.newTabSpec("3");
-		Intent intent3=new Intent(OrderManager.this,WaitHandle.class);
+		Intent intent3=new Intent(OrderManager.this,Om_HasFinishedActivity.class);
 		tabspec3.setIndicator("已完成").setContent(intent3);
 		tab.addTab(tabspec3);
 		
 		TabHost.TabSpec tabspec4=tab.newTabSpec("4");
-		Intent intent4=new Intent(OrderManager.this,WaitHandle.class);
+		Intent intent4=new Intent(OrderManager.this,Om_CancelActivity.class);
 		tabspec4.setIndicator("已取消").setContent(intent4);
 		tab.addTab(tabspec4);
 		
@@ -80,11 +77,11 @@ public class OrderManager extends TabActivity implements OnCheckedChangeListener
 			
 			break;	
 		case R.id.om_has_finished:
-			tab.setCurrentTab(3);
+			tab.setCurrentTab(2);
 			
 			break;
 		case R.id.om_cancel:
-			tab.setCurrentTab(4);
+			tab.setCurrentTab(3);
 			
 			break;	
 		}

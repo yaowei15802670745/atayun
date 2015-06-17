@@ -242,4 +242,7 @@
     <string name="om_unfinished">未完成</string>
     <string name="om_has_finished">已完成</string>
     <string name="om_cancel">已取消</string>
+    
+	<string name="co_applyorder">申请订单</string>
+	<string name="co_confirm">确定</string>
 </resources>

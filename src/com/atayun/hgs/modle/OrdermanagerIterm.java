@@ -3,7 +3,7 @@ package com.atayun.hgs.modle;
 public class OrdermanagerIterm {
 
 	private String orderFlag;// 订单状态
-	private String orderNo;//
+	private String orderNo;//订单编号
 	private String updateTime;//
 	private String userId;//
 	private String orderPrice;//
@@ -71,5 +71,4 @@ public class OrdermanagerIterm {
 	public OrdermanagerIterm(){
 		super();
 	}
-	
 }

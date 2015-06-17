@@ -44,7 +44,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/wh_Goods_info"
+                android:id="@+id/wh_order_price"
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
@@ -93,7 +93,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/wh_match_num"
+            android:id="@+id/wh_updata_time"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
